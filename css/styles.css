@@ -1,9 +1,6 @@
-#dance, #scared {
+form#number {
   display: none;
-}
-
-.question1, .question2, .btn {
-  display: none;
+  text-align: center;
 }
 
 .dialogue {

@@ -22,12 +22,15 @@ function toRobogers(number, name){
 
 // UI Logic
 $(document).ready(function() {
-  $("img#robot").click(function(event){
+  $("img#robot").click(function(){
     $(this).attr("src", "img/robot-scared.gif");
     $(".dialogue").text("Whoops! Looks like you've startled him. Click him once more to gain his trust.");
-    $("img#robot").click(function(event){
+
+    $("img#robot").click(function(){
       $(this).attr("src", "img/robot-ok.gif");
-      $(".dialogue").text("Nice! Now that you two are acquainted, Mr. Robogers will count for you! He has a very strange way of counting though. Just tell him your name and what to count to.");  
+      $(".dialogue").text("Nice! Now that you two are acquainted, Mr. Robogers will count for you! He has a very strange way of counting though. Just tell him your name and what to count to.");
+      $("form#number").show();
+      
       $("form#number").submit(function(event) {
         event.preventDefault();
         const userInput = $("input#userNum").val();
