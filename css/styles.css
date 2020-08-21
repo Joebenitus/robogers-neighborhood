@@ -1,3 +1,7 @@
 #dance {
   display: none;
 }
+
+.question1, .question2, .btn {
+  display: none;
+}

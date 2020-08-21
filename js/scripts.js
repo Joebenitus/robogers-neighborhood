@@ -1,6 +1,6 @@
 // Business Logic
 function toRobogers(number, name){
-  newArray = []
+  let newArray = []
   for (let i = 0; i <= number; i++){
     let iString = i.toString();
     if (iString.includes("3")){
@@ -22,13 +22,18 @@ function toRobogers(number, name){
 
 // UI Logic
 $(document).ready(function() {
-  $("form#number").submit(function(event) {
-    event.preventDefault();
-    const userInput = $("input#userNum").val();
-    const userName = $("input#name").val();
-    $("#idle").hide();
-    $("#dance").show();
+  $("#idle").click(function(event){
+    $(".question1").show();
+    $(".question2").show();
+    $(".btn").show();
+    $("form#number").submit(function(event) {
+      event.preventDefault();
+      const userInput = $("input#userNum").val();
+      const userName = $("input#name").val();
+      $("#idle").hide();
+      $("#dance").show();
 
-    $(".output").text(toRobogers(userInput, userName));
+      $(".output").text(toRobogers(userInput, userName));
+    });
   });
 });
