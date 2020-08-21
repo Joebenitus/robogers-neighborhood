@@ -11,10 +11,12 @@ function toRobogers(number, name){
       $("button").addClass("btn-danger");
       $("img").attr("src", "img/robot-creepy.png");
     } else if (!number) {
-      newArray.push("Mr. Robogers: I can't count to nothing.");
+      newArray.push("I can't count to nothing.");
+      $("img").attr("src", "img/robot-no.gif");
     } else if (!name) {
-        newArray.push("Mr. Robogers: Please tell me your name.");
-        break;
+      newArray.push("Please tell me your name.");
+      $("img").attr("src", "img/robot-what.gif");
+      break;
     } else if (iString.includes("4") && !$("body").hasClass("spooky-mode")){
       newArray.push("Bottom left");
     } else if (iString.includes("3")) {
