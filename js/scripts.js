@@ -2,7 +2,12 @@
 function toRobogers(number){
   newArray = []
   for (let i = 0; i <= number; i++){
-    newArray.push(i);
+    let iString = i.toString();
+    if (iString.includes("3")){
+      newArray.push(iString.replace(/3/g, "Won't you be my neighbor?"));
+    } else {
+      newArray.push(i);
+    }
   }
   return newArray;
 }

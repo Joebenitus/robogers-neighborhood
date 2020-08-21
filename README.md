@@ -14,6 +14,10 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * Input: 3
 * Output: 0, 1, 2, 3
 
+* Spec: The program will replace any element containing the number "3" with "Won't you be my neighbor?"
+* Input: 4
+* Output: 0, 1, 2, Wont you be my Neighbor?, 4
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
