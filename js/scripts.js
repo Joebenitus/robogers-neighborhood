@@ -26,6 +26,8 @@ $(document).ready(function() {
     event.preventDefault();
     const userInput = $("input#userNum").val();
     const userName = $("input#name").val();
+    $("#idle").hide();
+    $("#dance").show();
 
     $(".output").text(toRobogers(userInput, userName));
   });
