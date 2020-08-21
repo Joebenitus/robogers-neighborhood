@@ -4,7 +4,9 @@ function toRobogers(number){
   for (let i = 0; i <= number; i++){
     let iString = i.toString();
     if (iString.includes("3")){
-      newArray.push(iString.replace(/3/g, "Won't you be my neighbor?"));
+      newArray.push("Won't you be my neighbor?");
+    } else if (iString.includes("2")) {
+      newArray.push("Boop!");
     } else {
       newArray.push(i);
     }
