@@ -3,9 +3,15 @@ function toRobogers(number, name){
   let newArray = []
   for (let i = 0; i <= number; i++){
     let iString = i.toString();
-    if (iString.includes("3")){
-      if (name === "") {
-        newArray.push("Won't you be my neighbor?");
+    if (!number && !name){
+      break;
+    } else if (!number) {
+      newArray.push("Mr. Robogers: I can't count to nothing.")
+    } else if (iString.includes("3")){
+      if (!name) {
+        newArray.splice(0, newArray.length);
+        newArray.push("Mr. Robogers: Please tell me your name.");
+        break;
       } else {
         newArray.push("Won't you be my neighbor, " + name + "?");
       }
@@ -35,10 +41,9 @@ $(document).ready(function() {
         event.preventDefault();
         const userInput = $("input#userNum").val();
         const userName = $("input#name").val();
-        $("#idle").hide();
-        $("#dance").show();
+        $("img").attr("src", "img/robot-dance.gif");
 
-        $(".output").text(toRobogers(userInput, userName));
+        $(".output").text("Mr. Robogers: " + toRobogers(userInput, userName));
       });
     });
   });

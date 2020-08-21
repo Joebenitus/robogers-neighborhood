@@ -31,8 +31,12 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * Output: 0, Beep!, Boop!, Wont you be my neighbor, Joseph Karnafel?, 4
 
 * Spec: Program checks if the user has inputted a value for their name. If not, the program returns "Won't you be my neighbor?" instead of "Won't you be my neighbor, {name?}"
-* Input: 4
+* Input: null, 4
 * Output: 0, Beep!, Boop!, Wont you be my neighbor?, 4
+
+* Spec: If the user does not enter enter one of the specified fields, Mr. Robogers will return a snarky message telling the user to fill all fields.
+* Input: Joseph Karnafel, null
+* Output: I can't count to nothing
 
 ## Setup/Installation Requirements
 
