@@ -6,15 +6,15 @@ function toRobogers(number, name){
     if (!number && !name){
       break;
     } else if (!number) {
-      newArray.push("Mr. Robogers: I can't count to nothing.")
-    } else if (iString.includes("3")){
-      if (!name) {
-        newArray.splice(0, newArray.length);
+      newArray.push("Mr. Robogers: I can't count to nothing.");
+    } else if (!name) {
         newArray.push("Mr. Robogers: Please tell me your name.");
         break;
-      } else {
+    } else if (iString.includes("4")){
+      newArray.push("I see you")
+    }
+    else if (iString.includes("3")) {
         newArray.push("Won't you be my neighbor, " + name + "?");
-      }
     } else if (iString.includes("2")) {
       newArray.push("Boop!");
     } else if (iString.includes("1")) {
