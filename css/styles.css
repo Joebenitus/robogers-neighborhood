@@ -7,9 +7,17 @@ form#number {
   background-color: darkred;
 }
 
+.card-spooky {
+  background-color: rgb(180, 0, 0);
+}
+
 .dialogue, .output {
   margin-top: 50px;
   text-align: center;
+}
+
+.btn {
+  margin-top: 20px;
 }
 
 .center {
@@ -22,4 +30,5 @@ form#number {
 #creepy {
   font-size: x-small;
   margin-left: 5px;
+  color: lightgrey;
 }

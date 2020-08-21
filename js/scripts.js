@@ -4,12 +4,17 @@ function toRobogers(number, name){
   for (let i = 0; i <= number; i++){
     let iString = i.toString();
     if (!number && !name){
+      newArray.push("I'm no psychic! Tell me your name and give me a number.");
+      $("img").attr("src", "img/robot-no.gif");
       break;
     } else if (name.toLowerCase() === "i see you") {
       $("body").addClass("spooky-mode");
+      $(".card").addClass("card-spooky");
       $("button").removeClass("btn-primary");
       $("button").addClass("btn-danger");
       $("img").attr("src", "img/robot-creepy.png");
+      $("p#creepy").hide();
+      newArray.push("Hello there...");
     } else if (!number) {
       newArray.push("I can't count to nothing.");
       $("img").attr("src", "img/robot-no.gif");
@@ -48,9 +53,9 @@ $(document).ready(function() {
         const userInput = $("input#userNum").val();
         const userName = $("input#name").val();
         $("img").attr("src", "img/robot-dance.gif");
-
-        $(".output").text("Mr. Robogers: " + toRobogers(userInput, userName));
         $("p#creepy").text("i see you");
+        $(".output").text("Mr. Robogers: " + toRobogers(userInput, userName).join(", "));
+        
       });
     });
   });
