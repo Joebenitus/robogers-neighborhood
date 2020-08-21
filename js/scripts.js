@@ -7,6 +7,8 @@ function toRobogers(number){
       newArray.push("Won't you be my neighbor?");
     } else if (iString.includes("2")) {
       newArray.push("Boop!");
+    } else if (iString.includes("1")) {
+      newArray.push("Beep!");
     } else {
       newArray.push(i);
     }

@@ -22,6 +22,10 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * Input: 4
 * Output: 0, 1, Boop!, Wont you be my Neighbor?, 4
 
+* Spec: After checking if an element includes the number "3" and the number "2", the program with replace any element containing the number "1" and replace it with "Beep!"
+* Input: 4
+* Output: 0, Beep!, Boop!, Wont you be my Neighbor?, 4
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
