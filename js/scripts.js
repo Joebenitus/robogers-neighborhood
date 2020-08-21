@@ -4,7 +4,11 @@ function toRobogers(number, name){
   for (let i = 0; i <= number; i++){
     let iString = i.toString();
     if (iString.includes("3")){
-      newArray.push("Won't you be my neighbor, " + name + "?");
+      if (name === "") {
+        newArray.push("Won't you be my neighbor?");
+      } else {
+        newArray.push("Won't you be my neighbor, " + name + "?");
+      }
     } else if (iString.includes("2")) {
       newArray.push("Boop!");
     } else if (iString.includes("1")) {
@@ -15,7 +19,6 @@ function toRobogers(number, name){
   }
   return newArray;
 }
-
 
 // UI Logic
 $(document).ready(function() {

@@ -27,8 +27,12 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * Output: 0, Beep!, Boop!, Wont you be my neighbor?, 4
 
 * Spec: Instead of returning "Won't you be my neighbor?", the program will take the user's name as input and return "Won't you be my neighbor, {name}?"
-* Input: 6
-* Output: 0, Beep!, Boop!, Wont you be my neighbor, {name}?, 4
+* Input: Joseph Karnafel, 4
+* Output: 0, Beep!, Boop!, Wont you be my neighbor, Joseph Karnafel?, 4
+
+* Spec: Program checks if the user has inputted a value for their name. If not, the program returns "Won't you be my neighbor?" instead of "Won't you be my neighbor, {name?}"
+* Input: 4
+* Output: 0, Beep!, Boop!, Wont you be my neighbor?, 4
 
 ## Setup/Installation Requirements
 
