@@ -1,4 +1,4 @@
-# _{Application Name}_
+# _Mr. Roboger's Neighborhood_
 
 #### _{Brief description of application}, {Date of current version}_
 
@@ -7,6 +7,12 @@
 ## Description
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+
+#### Specs
+
+* Spec: The program returns a list of numbers from 0 to n
+* Input: 3
+* Output: 0, 1, 2, 3
 
 ## Setup/Installation Requirements
 
