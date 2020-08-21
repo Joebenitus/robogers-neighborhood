@@ -16,15 +16,19 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 * Spec: The program will replace any element containing the number "3" with "Won't you be my neighbor?"
 * Input: 4
-* Output: 0, 1, 2, Wont you be my Neighbor?, 4
+* Output: 0, 1, 2, Wont you be my neighbor?, 4
 
 * Spec: After checking if an element includes the number "3", the program with replace any element containing the number "2" and replace it with "Boop!"
 * Input: 4
-* Output: 0, 1, Boop!, Wont you be my Neighbor?, 4
+* Output: 0, 1, Boop!, Wont you be my neighbor?, 4
 
 * Spec: After checking if an element includes the number "3" and the number "2", the program with replace any element containing the number "1" and replace it with "Beep!"
 * Input: 4
-* Output: 0, Beep!, Boop!, Wont you be my Neighbor?, 4
+* Output: 0, Beep!, Boop!, Wont you be my neighbor?, 4
+
+* Spec: Instead of returning "Won't you be my neighbor?", the program will take the user's name as input and return "Won't you be my neighbor, {name}?"
+* Input: 6
+* Output: 0, Beep!, Boop!, Wont you be my neighbor, {name}?, 4
 
 ## Setup/Installation Requirements
 
