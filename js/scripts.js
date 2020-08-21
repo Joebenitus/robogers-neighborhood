@@ -22,18 +22,21 @@ function toRobogers(number, name){
 
 // UI Logic
 $(document).ready(function() {
-  $("#idle").click(function(event){
-    $(".question1").show();
-    $(".question2").show();
-    $(".btn").show();
-    $("form#number").submit(function(event) {
-      event.preventDefault();
-      const userInput = $("input#userNum").val();
-      const userName = $("input#name").val();
-      $("#idle").hide();
-      $("#dance").show();
+  $("img#robot").click(function(event){
+    $(this).attr("src", "img/robot-scared.gif");
+    $(".dialogue").text("Whoops! Looks like you've startled him. Click him once more to gain his trust.");
+    $("img#robot").click(function(event){
+      $(this).attr("src", "img/robot-ok.gif");
+      $(".dialogue").text("Nice! Now that you two are acquainted, Mr. Robogers will count for you! He has a very strange way of counting though. Just tell him your name and what to count to.");  
+      $("form#number").submit(function(event) {
+        event.preventDefault();
+        const userInput = $("input#userNum").val();
+        const userName = $("input#name").val();
+        $("#idle").hide();
+        $("#dance").show();
 
-      $(".output").text(toRobogers(userInput, userName));
+        $(".output").text(toRobogers(userInput, userName));
+      });
     });
   });
 });
