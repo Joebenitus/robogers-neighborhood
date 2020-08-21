@@ -3,7 +3,7 @@ form#number {
   text-align: center;
 }
 
-.dialogue {
+.dialogue, .output {
   margin-top: 50px;
   text-align: center;
 }
@@ -13,4 +13,8 @@ form#number {
   margin-left: auto;
   margin-right: auto;
   width: 200px;
+}
+
+#creepy {
+  font-size: x-small;
 }

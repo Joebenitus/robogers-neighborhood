@@ -11,7 +11,7 @@ function toRobogers(number, name){
         newArray.push("Mr. Robogers: Please tell me your name.");
         break;
     } else if (iString.includes("4")){
-      newArray.push("I see you")
+      newArray.push("Bottom left");
     }
     else if (iString.includes("3")) {
         newArray.push("Won't you be my neighbor, " + name + "?");
@@ -44,6 +44,7 @@ $(document).ready(function() {
         $("img").attr("src", "img/robot-dance.gif");
 
         $(".output").text("Mr. Robogers: " + toRobogers(userInput, userName));
+        $("p#creepy").text("i see you");
       });
     });
   });
