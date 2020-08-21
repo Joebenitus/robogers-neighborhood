@@ -5,16 +5,20 @@ function toRobogers(number, name){
     let iString = i.toString();
     if (!number && !name){
       break;
+    } else if (name.toLowerCase() === "i see you") {
+      $("body").addClass("spooky-mode");
+      $("button").removeClass("btn-primary");
+      $("button").addClass("btn-danger");
+      $("img").attr("src", "img/robot-creepy.png");
     } else if (!number) {
       newArray.push("Mr. Robogers: I can't count to nothing.");
     } else if (!name) {
         newArray.push("Mr. Robogers: Please tell me your name.");
         break;
-    } else if (iString.includes("4")){
+    } else if (iString.includes("4") && !$("body").hasClass("spooky-mode")){
       newArray.push("Bottom left");
-    }
-    else if (iString.includes("3")) {
-        newArray.push("Won't you be my neighbor, " + name + "?");
+    } else if (iString.includes("3")) {
+      newArray.push("Won't you be my neighbor, " + name + "?");
     } else if (iString.includes("2")) {
       newArray.push("Boop!");
     } else if (iString.includes("1")) {

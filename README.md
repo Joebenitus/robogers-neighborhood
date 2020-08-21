@@ -38,6 +38,10 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * Input: Joseph Karnafel, null
 * Output: I can't count to nothing
 
+* Spec: If the user enters "i see you" in the name field, the background color turns dark red
+* Input: i see you
+* Output: {bg color changes to red and robot animation changes}
+
 ## Setup/Installation Requirements
 
 * _This is a great place_

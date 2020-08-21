@@ -3,6 +3,10 @@ form#number {
   text-align: center;
 }
 
+.spooky-mode {
+  background-color: darkred;
+}
+
 .dialogue, .output {
   margin-top: 50px;
   text-align: center;
@@ -17,4 +21,5 @@ form#number {
 
 #creepy {
   font-size: x-small;
+  margin-left: 5px;
 }
